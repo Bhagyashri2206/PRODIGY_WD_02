@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Neon Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <div class="container">
+        <h1>⏱ Neon Stopwatch</h1>
+
+        <div class="time-display" id="display">00:00:00</div>
+
+        <div class="buttons">
+            <button class="btn start" onclick="start()">▶ Start</button>
+            <button class="btn pause" onclick="pause()">⏸ Pause</button>
+            <button class="btn lap" onclick="lap()">🏁 Lap</button>
+            <button class="btn reset" onclick="reset()">🔄 Reset</button>
+        </div>
+
+        <ul id="laps"></ul>
+    </div>
+
+    <!-- Sounds -->
+    <audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
+    <audio id="lapSound" src="https://assets.mixkit.co/active_storage/sfx/2080/2080-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
